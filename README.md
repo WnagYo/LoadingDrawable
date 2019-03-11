@@ -1,3 +1,27 @@
+To get a Git project into your build:
+
+Step 1. Add the JitPack repository to your build file
+
+gradle
+maven
+sbt
+leiningen
+Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+Step 2. Add the dependency
+
+	dependencies {
+	        implementation 'com.github.WnagYo:LoadingDrawable:Tag'
+	}
+
+
+
 
 ## LoadingDrawable: Android cool animation collection
 [前言](http://www.jianshu.com/p/6e0ac5af4e8b)&nbsp;&nbsp;&nbsp;
